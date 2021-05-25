@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .rtgs{
+            background-color:rgb(224, 218, 32);
+            border-radius:25%;
+            text-align: center;
+        }
+    </style>
+</head>
+<html>
+<body style="background-color: black;">
+    <center>
+        <h1 style="color:rgb(212, 108, 10);"><u>Add New Task </u></h1><hr><br><br>
+        <form method="POST">
+            {%csrf_token%}
+            <small style="color:white">Enter Task</small><br>
+            <input class="rtgs" type="text" value="{{e.task}}" required name="task"><br><br>
+            <small style="color:white">Enter Description</small><br>
+            <input class="rtgs" type="text" required value="{{e.des}}" name="des"><br><br>
+            <input style="background-color:rgb(212, 108, 10);border:darkorange;color:white" type="submit"> <br>
+        </form>
+    </center>
+</body>
+</html>
