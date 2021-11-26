@@ -1,6 +1,7 @@
 # Todo-Django
 
 Follow the below steps to run project locally
+-------------------------------------------
 
 # Create and activate Virtual environment
 
